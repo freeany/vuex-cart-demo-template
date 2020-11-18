@@ -14,7 +14,7 @@ const mutations = {
     const itemIndex = state.production.findIndex(
       item => (item.id = payload.id)
     )
-    state.production.splice(itemIndex, 1)
+    itemIndex !== -1 && state.production.splice(itemIndex, 1)
   }
 }
 const actions = {

@@ -82,7 +82,7 @@ export default {
         return this.cartProducts.every(item => item.isChecked)
       },
       set (value) {
-        this.changeAllProduct(value)
+        this.changeAllProduct(value) // 将反选所有item的isChecked
       }
     }
   },
